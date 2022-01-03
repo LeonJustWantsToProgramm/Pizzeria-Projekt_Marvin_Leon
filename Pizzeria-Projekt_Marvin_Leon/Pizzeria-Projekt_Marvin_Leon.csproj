@@ -9,10 +9,20 @@
 
   <ItemGroup>
     <None Remove="cardboard-box-g4fdf1f6be_1280.png" />
+    <None Remove="download-g7615da3a3_1280.png" />
     <None Remove="pizza-ge001c3d07_1280.png" />
     <None Remove="pizza-gfb0ffff0d_1280.png" />
     <None Remove="post-it-g8c4bae906_1280.png" />
     <None Remove="soda-g48263f709_1280.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="cardboard-box-g4fdf1f6be_1280.png" />
+    <Resource Include="download-g7615da3a3_1280.png" />
+    <Resource Include="pizza-ge001c3d07_1280.png" />
+    <Resource Include="pizza-gfb0ffff0d_1280.png" />
+    <Resource Include="post-it-g8c4bae906_1280.png" />
+    <Resource Include="soda-g48263f709_1280.png" />
   </ItemGroup>
 
 </Project>

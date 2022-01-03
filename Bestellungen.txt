@@ -1,0 +1,41 @@
+Bestell_ID:1
+Kunde: Max Mustermann
+Datum: 14.12.2021
+Uhrzeit: 09:12
+Produkte: Salamipizza, Cola Original
+
+Bestell_ID:2
+Kunde: Max Mustermann
+Datum: 14.12.2021
+Uhrzeit: 09:12
+Produkte: Salamipizza, Cola Original
+
+Bestell_ID:3
+Kunde: Max Mustermann
+Datum: 14.12.2021
+Uhrzeit: 09:12
+Produkte: Salamipizza, Cola Original
+
+Bestell_ID:4
+Kunde: Max Mustermann
+Datum: 14.12.2021
+Uhrzeit: 09:12
+Produkte: Salamipizza, Cola Original
+
+Bestell_ID:5
+Kunde: Max Mustermann
+Datum: 14.12.2021
+Uhrzeit: 09:12
+Produkte: Salamipizza, Cola Original
+
+Bestell_ID:6
+Kunde: Max Mustermann
+Datum: 14.12.2021
+Uhrzeit: 09:12
+Produkte: Salamipizza, Cola Original
+
+Bestell_ID:7
+Kunde: Max Mustermann
+Datum: 14.12.2021
+Uhrzeit: 09:12
+Produkte: Salamipizza, Cola Original

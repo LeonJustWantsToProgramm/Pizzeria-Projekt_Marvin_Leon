@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>Pizzeria_Projekt_Marvin_Leon</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="cardboard-box-g4fdf1f6be_1280.png" />
+    <None Remove="pizza-ge001c3d07_1280.png" />
+    <None Remove="pizza-gfb0ffff0d_1280.png" />
+    <None Remove="post-it-g8c4bae906_1280.png" />
+    <None Remove="soda-g48263f709_1280.png" />
+  </ItemGroup>
+
+</Project>

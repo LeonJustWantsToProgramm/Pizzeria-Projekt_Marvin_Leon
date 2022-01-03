@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pizzeria_Projekt_Marvin_Leon.App" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pizzeria_Projekt_Marvin_Leon.Bestellung">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAEAAgAAAAIAAAAAAAQAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Bestellung.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="bestellteProdukte" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Pizzeria_Projekt_Marvin_Leon.Getraenk">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAIAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Getraenk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pizzeria_Projekt_Marvin_Leon.Kunde">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACQAAAAgAACAAAAAgAAAAAAAAAAAACAAAAUggAABA=</HashCode>
+      <FileName>Kunde.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pizzeria_Projekt_Marvin_Leon.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAABAAAAAAAAAAEEAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pizzeria_Projekt_Marvin_Leon.Pizza">
+    <Position X="11.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Pizza.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="pizzaZutaten" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Pizzeria_Projekt_Marvin_Leon.Produkt">
+    <Position X="9.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABA=</HashCode>
+      <FileName>Produkt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pizzeria_Projekt_Marvin_Leon.Zutat">
+    <Position X="14.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABA=</HashCode>
+      <FileName>Zutat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -8,7 +8,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
 {
     class Bestellung
     {
-        private static int bestellID;
+        private static int bestellungsID = 1000;
         private String bestellDatum;
         private double preis;
         public List<Produkt> bestellteProdukte;
@@ -18,8 +18,10 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
         public Bestellung(String bestellDatum, double preis)
         {
+            bestellungsID++;
             this.bestellDatum = bestellDatum;
             this.preis = preis;
+            bestellteProdukte = new List<Produkt>();
         }
     }
 }

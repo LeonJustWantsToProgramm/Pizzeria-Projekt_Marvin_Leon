@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace Pizzeria_Projekt_Marvin_Leon
 {
-    class Zutat
+    class SalamiPizza : Pizza
     {
-        private String bezeichnung;
 
-        public String Bezeichnung { get; set; }
 
-        public Zutat(String bezeichnung)
+        public SalamiPizza(double groeße, String bezeichnung, String form) : base(groeße, bezeichnung, form)
         {
-            this.bezeichnung = bezeichnung;
+
         }
     }
 }

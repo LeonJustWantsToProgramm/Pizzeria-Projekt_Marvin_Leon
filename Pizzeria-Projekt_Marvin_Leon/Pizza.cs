@@ -13,9 +13,10 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
         public String Form { get; set; }
 
-        public Pizza (double groeße, String bezeichnung, String form) : base (bezeichnung)
+        public Pizza(double groeße, String bezeichnung, String form) : base(bezeichnung)
         {
-
+            this.form = form;
+            pizzaZutaten = new List<Zutat>();
         }
     }
 }

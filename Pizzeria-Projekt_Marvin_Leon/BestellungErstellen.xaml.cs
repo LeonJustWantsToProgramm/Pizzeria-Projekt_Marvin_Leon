@@ -25,9 +25,8 @@ namespace Pizzeria_Projekt_Marvin_Leon
             tbx_fanta.Text = "0";
             tbx_sprite.Text = "0";
             tbx_wasser.Text = "0";
-            tbx_p_magaritha.Text = "0";
-            tbx_p_salami.Text = "0";
-            tbx_p_thunfisch.Text = "0";
+            tbx_pizza.Text = "0";
+           
         }
         double preis = 0;
 
@@ -42,7 +41,10 @@ namespace Pizzeria_Projekt_Marvin_Leon
             string stadt = tb_stadt.ToString();
             string date = DateTime.Now.ToString("MM/dd/yyyy h:mm tt");
 
-            new Kunde(vorname, nachname, plz, stadt, straße, hausnummer);
+            Kunde kunde = new Kunde(vorname, nachname, plz, stadt, straße, hausnummer);
+            Bestellung bestellung = new Bestellung(date, preis);
+            bestellung.bestellteProdukte.Add(new Pizza("Pizza", preis));
+
 
             preisEigenePizza();
             preisPizzen();
@@ -85,21 +87,12 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
         public void preisPizzen()
         {
-            if (tbx_p_salami.ToString() != "0")
+            if (tbx_pizza.ToString() != "0")
             {
-                int input = int.Parse(tbx_p_salami.Text);
+                int input = int.Parse(tbx_pizza.Text);
                 preis += input * 5.5;
             }
-            if (tbx_p_magaritha.ToString() != "0")
-            {
-                int input = int.Parse(tbx_p_magaritha.Text);
-                preis += input * 5;
-            }
-            if (tbx_p_thunfisch.ToString() != "0")
-            {
-                int input = int.Parse(tbx_p_thunfisch.Text);
-                preis += input * 5.5;
-            }
+            
 
         }
 
@@ -138,9 +131,6 @@ namespace Pizzeria_Projekt_Marvin_Leon
             tbx_gesamtpreis.Content = text + "€";
         }
 
-        private void cb_salami_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
+      
     }
 }

@@ -37,8 +37,9 @@ namespace Pizzeria_Projekt_Marvin_Leon
         double spritePreis = 0;
         double wasserPreis = 0;
 
-        List<String> zutatenListe = new List<String>();
+        Pizza pizza;
 
+        List<String> zutatenListe = new List<String>();
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -67,7 +68,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
             if (tbx_pizza.Text != "0")
             {
-                bestellung.bestellteProdukte.Add(new Pizza("Pizza", pizzaPreis, zutatenListe));
+                bestellung.bestellteProdukte.Add(pizza = new Pizza("Pizza", pizzaPreis, zutatenListe));
             }
             if (tbx_cola.Text != "0")
             {
@@ -194,9 +195,25 @@ namespace Pizzeria_Projekt_Marvin_Leon
             tbx_gesamtpreis.Content = text + "€";
         }
 
+        public string ToString(string zutatenAnzahl)
+        {
+            // Ändern
+            switch (zutatenAnzahl)
+            {
+                case "0":
+                    return string.Format("{0}", pizza.GetBezeichnung());
+                case "1":
+                    return pizza.GetBezeichnung();
+                case "2":
+                    return
+            }
+            // Ändern
+            return base.ToString();
+        }
+
         public void ausgabeInTextdatei()
         {
-            
+
         }
 
 

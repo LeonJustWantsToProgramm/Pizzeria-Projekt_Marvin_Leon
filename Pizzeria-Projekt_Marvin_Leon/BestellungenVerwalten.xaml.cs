@@ -20,6 +20,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
     /// </summary>
     public partial class BestellungenVerwalten : Window
     {
+
         public BestellungenVerwalten()
         {
             InitializeComponent();

@@ -8,7 +8,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
 {
     class Getraenk : Produkt
     {
-        public Getraenk(String bezeichnung, double preis) : base(bezeichnung, preis)
+        public Getraenk(string bezeichnung, double preis) : base(bezeichnung, preis)
         {
 
         }

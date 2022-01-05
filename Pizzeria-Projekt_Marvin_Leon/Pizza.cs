@@ -10,9 +10,9 @@ namespace Pizzeria_Projekt_Marvin_Leon
     {
         public List<Zutat> pizzaZutaten = new List<Zutat>();
 
-        public Pizza(String bezeichnung, double preis, List<String> pizzaZutaten) : base(bezeichnung, preis)
+        public Pizza(string bezeichnung, double preis, List<string> pizzaZutaten) : base(bezeichnung, preis)
         {
-            foreach (String s in pizzaZutaten)
+            foreach (string s in pizzaZutaten)
             {
                 this.pizzaZutaten.Add(new Zutat(s));
             }

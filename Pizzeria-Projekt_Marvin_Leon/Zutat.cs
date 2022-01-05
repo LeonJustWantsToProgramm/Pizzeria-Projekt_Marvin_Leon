@@ -8,11 +8,19 @@ namespace Pizzeria_Projekt_Marvin_Leon
 {
     class Zutat
     {
-        private String bezeichnung;
+        private string bezeichnung;
 
-        public String Bezeichnung { get; set; }
+        public string GetBezeichnung()
+        {
+            return this.bezeichnung;
+        }
 
-        public Zutat(String bezeichnung)
+        public void SetBezeichnung(string bezeichnung)
+        {
+            this.bezeichnung = bezeichnung
+        }
+
+        public Zutat(string bezeichnung)
         {
             this.bezeichnung = bezeichnung;
         }

@@ -1,4 +1,0 @@
-Pizzateig: 12000g
-Salami: 2000g
-Käs: 5000g
-Tomatensoße: 700g

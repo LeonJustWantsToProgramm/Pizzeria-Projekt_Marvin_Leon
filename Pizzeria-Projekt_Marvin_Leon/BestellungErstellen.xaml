@@ -21,9 +21,7 @@
         <Label Content="Name" HorizontalAlignment="Left" Margin="36,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.225,-0.026" FontWeight="Bold" FontSize="14"/>
         <Label Content="Adresse" HorizontalAlignment="Left" Margin="36,136,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.225,-0.026" FontWeight="Bold" FontSize="14"/>
         <Label Content="Bestellung" HorizontalAlignment="Left" Margin="36,0,0,0" VerticalAlignment="Center" RenderTransformOrigin="0.225,-0.026" FontWeight="Bold" FontSize="14"/>
-        <Label Content="Salami-Pizza (+5,50€)" HorizontalAlignment="Left" Margin="94,264,0,0" VerticalAlignment="Top"/>
-        <Label Content="Magaritha-Pizza (+5,00€)" HorizontalAlignment="Left" Margin="94,293,0,0" VerticalAlignment="Top"/>
-        <Label Content="Thunfisch-Pizza (+5,50€)" HorizontalAlignment="Left" Margin="94,321,0,0" VerticalAlignment="Top"/>
+        <Label Content="Pizza (+5,50€)" HorizontalAlignment="Left" Margin="94,264,0,0" VerticalAlignment="Top"/>
         <Label Content="Cola Classic (+2,50€)" HorizontalAlignment="Left" Margin="327,264,0,0" VerticalAlignment="Top"/>
         <Label Content="Fanta (+2,50€)" HorizontalAlignment="Left" Margin="327,293,0,0" VerticalAlignment="Top"/>
         <Label Content="Sprite(+2,50€)" HorizontalAlignment="Left" Margin="327,321,0,0" VerticalAlignment="Top"/>
@@ -32,15 +30,13 @@
         <Label Content="Getränke" HorizontalAlignment="Left" Margin="279,231,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.225,-0.026" FontWeight="Bold"/>
         <Label Content="Eigene Pizza" HorizontalAlignment="Left" Margin="488,231,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.225,-0.026" FontWeight="Bold"/>
         <CheckBox x:Name="cb_käse" Content="Käse (+1,20€)" HorizontalAlignment="Left" Margin="492,269,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="cb_salami" Content="Salami 50g (+1,20€)" HorizontalAlignment="Left" Margin="492,285,0,0" VerticalAlignment="Top" Checked="cb_salami_Checked"/>
-        <CheckBox x:Name="cb_schinken" Content="Schinken 50g (+1,20€)" HorizontalAlignment="Left" Margin="492,301,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="cb_peperoni" Content="Peperoni 50g (+1,20€)" HorizontalAlignment="Left" Margin="492,317,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="cb_thunfisch" Content="Thunfisch 50g (+1,20€)" HorizontalAlignment="Left" Margin="492,333,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="cb_paprika" Content="Paprika 50g (+1,20€)" HorizontalAlignment="Left" Margin="492,349,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="cb_ananas" Content="Ananas50g (+1,20€)" HorizontalAlignment="Left" Margin="492,365,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbx_p_salami" HorizontalAlignment="Left" Margin="50,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35"/>
-        <TextBox x:Name="tbx_p_magaritha" HorizontalAlignment="Left" Margin="50,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35"/>
-        <TextBox x:Name="tbx_p_thunfisch" HorizontalAlignment="Left" Margin="50,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35"/>
+        <CheckBox x:Name="cb_salami" Content="Salami (+1,20€)" HorizontalAlignment="Left" Margin="492,285,0,0" VerticalAlignment="Top" Checked="cb_salami_Checked"/>
+        <CheckBox x:Name="cb_schinken" Content="Schinken (+1,20€)" HorizontalAlignment="Left" Margin="492,301,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cb_peperoni" Content="Peperoni (+1,20€)" HorizontalAlignment="Left" Margin="492,317,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cb_thunfisch" Content="Thunfisch (+1,20€)" HorizontalAlignment="Left" Margin="492,333,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cb_paprika" Content="Paprika (+1,20€)" HorizontalAlignment="Left" Margin="492,349,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cb_ananas" Content="Ananas (+1,20€)" HorizontalAlignment="Left" Margin="492,365,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbx_pizza" HorizontalAlignment="Left" Margin="50,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35"/>
         <TextBox x:Name="tbx_cola" HorizontalAlignment="Left" Margin="287,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35"/>
         <TextBox x:Name="tbx_fanta" HorizontalAlignment="Left" Margin="287,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35"/>
         <TextBox x:Name="tbx_sprite" HorizontalAlignment="Left" Margin="287,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35"/>

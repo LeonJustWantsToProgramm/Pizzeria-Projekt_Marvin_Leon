@@ -8,11 +8,14 @@ namespace Pizzeria_Projekt_Marvin_Leon
 {
     class Pizza : Produkt
     {
-        public List<Zutat> pizzaZutaten;
+        public List<Zutat> pizzaZutaten = new List<Zutat>();
 
-        public Pizza(String bezeichnung, double preis) : base(bezeichnung, preis)
+        public Pizza(String bezeichnung, double preis, List<String> pizzaZutaten) : base(bezeichnung, preis)
         {
-            pizzaZutaten = new List<Zutat>();
+            foreach (String s in pizzaZutaten)
+            {
+                this.pizzaZutaten.Add(new Zutat(s));
+            }
         }
     }
 }

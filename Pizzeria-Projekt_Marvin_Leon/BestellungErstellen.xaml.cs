@@ -26,6 +26,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
             tbx_sprite.Text = "0";
             tbx_wasser.Text = "0";
             tbx_pizza.Text = "0";
+
         }
         double preis = 0;
         double pizzaPreis = 5.5;
@@ -53,8 +54,8 @@ namespace Pizzeria_Projekt_Marvin_Leon
             string stadt = tb_stadt.ToString();
             string date = DateTime.Now.ToString("MM/dd/yyyy h:mm tt");
 
-
             Kunde kunde = new Kunde(vorname, nachname, plz, stadt, straße, hausnummer);
+            new Kunde(vorname, nachname, plz, stadt, straße, hausnummer);
 
             preisEigenePizza();
             preisPizzen();
@@ -179,9 +180,6 @@ namespace Pizzeria_Projekt_Marvin_Leon
             tbx_gesamtpreis.Content = text + "€";
         }
 
-        private void cb_salami_Checked(object sender, RoutedEventArgs e)
-        {
 
-        }
     }
 }

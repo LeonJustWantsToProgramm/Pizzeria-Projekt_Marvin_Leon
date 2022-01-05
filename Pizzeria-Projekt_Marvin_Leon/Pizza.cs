@@ -8,14 +8,10 @@ namespace Pizzeria_Projekt_Marvin_Leon
 {
     class Pizza : Produkt
     {
-        private String form;
         public List<Zutat> pizzaZutaten;
 
-        public String Form { get; set; }
-
-        public Pizza(double groeße, String bezeichnung, String form) : base(bezeichnung)
+        public Pizza(String bezeichnung, double preis) : base(bezeichnung, preis)
         {
-            this.form = form;
             pizzaZutaten = new List<Zutat>();
         }
     }

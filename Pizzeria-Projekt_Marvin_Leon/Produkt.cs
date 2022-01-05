@@ -8,16 +8,17 @@ namespace Pizzeria_Projekt_Marvin_Leon
 {
     class Produkt
     {
-        //private double groeße;
         private String bezeichnung;
+        private double preis;
 
-        //public double Groeße { get; set; }
         public String Bezeichnung { get; set; }
+        public double Preis { get; set; }
 
-        public Produkt (String bezeichnung)
+
+        public Produkt(String bezeichnung, double preis)
         {
-            //this.groeße = groeße;
             this.bezeichnung = bezeichnung;
+            this.preis = preis;
         }
     }
 }

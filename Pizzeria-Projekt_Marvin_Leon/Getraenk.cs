@@ -8,17 +8,13 @@ namespace Pizzeria_Projekt_Marvin_Leon
 {
     class Getraenk : Produkt
     {
-        private double groeße;
-        private String name;
+        private double preis;
 
-        public double Groeße { get; set; }
-        public String Name { get; set; }
+        public double Preis { get; set; }
 
-        public Getraenk(String name, double groeße, String bezeichnung)
-            : base(bezeichnung)
+        public Getraenk(String bezeichnung, double preis) : base(bezeichnung)
         {
-            this.name = name;
-            this.groeße = groeße;
+            this.preis = preis;
         }
 
 

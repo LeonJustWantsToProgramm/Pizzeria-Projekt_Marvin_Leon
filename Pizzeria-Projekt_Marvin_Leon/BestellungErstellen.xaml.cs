@@ -33,7 +33,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
             string vorname = tb_vorname.ToString();
             string nachname = tb_nachname.ToString();
             string straße = tb_straße.ToString();
@@ -44,6 +44,8 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
             new Kunde(vorname, nachname, plz, stadt, straße, hausnummer);
 
+            new Pizza();
+
             preisEigenePizza();
             preisPizzen();
             preisGetränke();
@@ -53,7 +55,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
         public void preisEigenePizza()
         {
-            if(cb_ananas.IsChecked == true)
+            if (cb_ananas.IsChecked == true)
             {
                 preis += 1.2;
             }
@@ -85,14 +87,14 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
         public void preisPizzen()
         {
-            if(tbx_p_salami.ToString() != "0")
+            if (tbx_p_salami.ToString() != "0")
             {
                 int input = int.Parse(tbx_p_salami.Text);
                 preis += input * 5.5;
             }
             if (tbx_p_magaritha.ToString() != "0")
             {
-                int input = int.Parse(tbx_p_magaritha.Text); 
+                int input = int.Parse(tbx_p_magaritha.Text);
                 preis += input * 5;
             }
             if (tbx_p_thunfisch.ToString() != "0")
@@ -136,6 +138,11 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
             string text = preis.ToString();
             tbx_gesamtpreis.Content = text + "€";
+        }
+
+        private void cb_salami_Checked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

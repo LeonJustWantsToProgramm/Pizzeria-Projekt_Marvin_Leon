@@ -26,28 +26,10 @@ namespace Pizzeria_Projekt_Marvin_Leon
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Getänkesortiment getränkesortiment = new Getänkesortiment();
-            getränkesortiment.Show();
-        }
-
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Bestellungen bestellungen = new Bestellungen();
             bestellungen.Show();
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            Lagerbestand lagerbestand = new Lagerbestand();
-            lagerbestand.Show();
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            Pizzasortiment pizzasortiment = new Pizzasortiment();
-            pizzasortiment.Show();
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)

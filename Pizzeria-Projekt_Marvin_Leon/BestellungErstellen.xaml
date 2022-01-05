@@ -31,8 +31,8 @@
         <Label Content="Pizza" HorizontalAlignment="Left" Margin="42,231,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.225,-0.026" FontWeight="Bold"/>
         <Label Content="Getränke" HorizontalAlignment="Left" Margin="279,231,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.225,-0.026" FontWeight="Bold"/>
         <Label Content="Eigene Pizza" HorizontalAlignment="Left" Margin="488,231,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.225,-0.026" FontWeight="Bold"/>
-        <CheckBox x:Name="cb_käse" Content="Käse 50g (+1,20€)" HorizontalAlignment="Left" Margin="492,269,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="cb_salami" Content="Salami 50g (+1,20€)" HorizontalAlignment="Left" Margin="492,285,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cb_käse" Content="Käse (+1,20€)" HorizontalAlignment="Left" Margin="492,269,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="cb_salami" Content="Salami 50g (+1,20€)" HorizontalAlignment="Left" Margin="492,285,0,0" VerticalAlignment="Top" Checked="cb_salami_Checked"/>
         <CheckBox x:Name="cb_schinken" Content="Schinken 50g (+1,20€)" HorizontalAlignment="Left" Margin="492,301,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="cb_peperoni" Content="Peperoni 50g (+1,20€)" HorizontalAlignment="Left" Margin="492,317,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="cb_thunfisch" Content="Thunfisch 50g (+1,20€)" HorizontalAlignment="Left" Margin="492,333,0,0" VerticalAlignment="Top"/>

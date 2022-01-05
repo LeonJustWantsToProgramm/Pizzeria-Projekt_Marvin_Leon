@@ -22,7 +22,7 @@ namespace Pizzaria
         public Bestellungen()
         {
             InitializeComponent();
-            txtEditor.Text = File.ReadAllText("Bestellungen.txt");
+            //txtEditor.Text = File.ReadAllText("Bestellungen.txt");
         }
     }
 }

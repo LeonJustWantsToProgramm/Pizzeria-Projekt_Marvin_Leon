@@ -44,8 +44,6 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
             new Kunde(vorname, nachname, plz, stadt, straße, hausnummer);
 
-            new Pizza();
-
             preisEigenePizza();
             preisPizzen();
             preisGetränke();

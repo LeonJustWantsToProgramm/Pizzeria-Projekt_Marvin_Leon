@@ -89,14 +89,14 @@ namespace Pizzeria_Projekt_Marvin_Leon
             //Ausgabe in eine Textdatei
             List<String> ausgabeliste = new List<String>();
             bestellung.bestellteProdukte.ToArray();
-            
 
 
+            var stringList = bestellung.bestellteProdukte.OfType<string>();
 
-            String pfad = @"D:\DateiTest.txt";
-            List<String> ausgabeListe = bestellung.bestellteProdukte.Distinct().ToList();
+            String pfad = @"C:\Users\marvi\Downloads\DateiTest.txt";
+            List<String> ausgabeListe = stringList.Distinct().ToList();
             ausgabeListe.Sort();
-            File.WriteAllLines(pfad, ausgabeListe);
+            File.WriteAllLines(pfad, stringList);
 
         }
 

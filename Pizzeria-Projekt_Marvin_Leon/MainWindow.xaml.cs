@@ -26,12 +26,15 @@ namespace Pizzeria_Projekt_Marvin_Leon
             InitializeComponent();
         }
 
-      
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
             BestellungErstellen bestellungErstellen = new BestellungErstellen();
             bestellungErstellen.Show();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

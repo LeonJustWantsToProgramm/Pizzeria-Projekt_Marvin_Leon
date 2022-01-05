@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -83,6 +85,18 @@ namespace Pizzeria_Projekt_Marvin_Leon
             {
                 bestellung.bestellteProdukte.Add(new Getraenk("Wasser", wasserPreis));
             }
+
+            //Ausgabe in eine Textdatei
+            List<String> ausgabeliste = new List<String>();
+            bestellung.bestellteProdukte.ToArray();
+            
+
+
+
+            String pfad = @"D:\DateiTest.txt";
+            List<String> ausgabeListe = bestellung.bestellteProdukte.Distinct().ToList();
+            ausgabeListe.Sort();
+            File.WriteAllLines(pfad, ausgabeListe);
 
         }
 
@@ -178,6 +192,11 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
             string text = preis.ToString();
             tbx_gesamtpreis.Content = text + "€";
+        }
+
+        public void ausgabeInTextdatei()
+        {
+            
         }
 
 

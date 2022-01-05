@@ -10,7 +10,7 @@
   <Class Name="Pizzeria_Projekt_Marvin_Leon.Bestellung">
     <Position X="9.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAACAAAAEAAgAAAAIAAAAAAAQAAAAEAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAEAAgAAAAIAgAAAAAQAAAAEAAAAAAAAAAAA=</HashCode>
       <FileName>Bestellung.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -34,7 +34,7 @@
   <Class Name="Pizzeria_Projekt_Marvin_Leon.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="13" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAABAAAAAAAAAAEEAAAAAAAAAAAACAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
@@ -57,7 +57,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Pizzeria_Projekt_Marvin_Leon.Zutat">
-    <Position X="14.25" Y="4.5" Width="1.5" />
+    <Position X="14.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABA=</HashCode>
       <FileName>Zutat.cs</FileName>

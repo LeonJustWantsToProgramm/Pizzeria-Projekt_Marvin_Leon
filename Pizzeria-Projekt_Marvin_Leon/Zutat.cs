@@ -17,7 +17,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
         public void SetBezeichnung(string bezeichnung)
         {
-            this.bezeichnung = bezeichnung
+            this.bezeichnung = bezeichnung;
         }
 
         public Zutat(string bezeichnung)

@@ -16,7 +16,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
             return this.bezeichnung;
         }
 
-        public string SetBezeichnung(string bezeichnung)
+        public void SetBezeichnung(string bezeichnung)
         {
             this.bezeichnung = bezeichnung;
         }

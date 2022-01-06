@@ -58,11 +58,10 @@ namespace Pizzeria_Projekt_Marvin_Leon
             string date = DateTime.Now.ToString("MM/dd/yyyy h:mm tt");
 
             Kunde kunde = new Kunde(vorname, nachname, plz, stadt, straße, hausnummer);
-            new Kunde(vorname, nachname, plz, stadt, straße, hausnummer);
 
-            preisEigenePizza();
-            preisPizzen();
-            preisGetränke();
+            PreisEigenePizza();
+            PreisPizzen();
+            PreisGetränke();
 
             Bestellung bestellung = new Bestellung(date, preis);
 
@@ -94,14 +93,15 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
             var stringList = bestellung.bestellteProdukte.OfType<string>();
 
-            String pfad = @"C:\Users\marvi\Downloads\DateiTest.txt";
+            // pfad auf jedem Windows PC verfügbar gemacht
+            String pfad = @"%USERPROFILE%\Downloads\DateiTest.txt";
             List<String> ausgabeListe = stringList.Distinct().ToList();
             ausgabeListe.Sort();
             File.WriteAllLines(pfad, stringList);
 
         }
 
-        public void preisEigenePizza()
+        public void PreisEigenePizza()
         {
             if (cb_ananas.IsChecked == true)
             {
@@ -147,7 +147,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
             }
         }
 
-        public void preisPizzen()
+        public void PreisPizzen()
         {
             if (tbx_pizza.ToString() != "0")
             {
@@ -156,7 +156,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
             }
         }
 
-        public void preisGetränke()
+        public void PreisGetränke()
         {
             if (tbx_cola.ToString() != "0")
             {
@@ -187,31 +187,43 @@ namespace Pizzeria_Projekt_Marvin_Leon
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             preis = 0;
-            preisEigenePizza();
-            preisPizzen();
-            preisGetränke();
+            PreisEigenePizza();
+            PreisPizzen();
+            PreisGetränke();
 
             string text = preis.ToString();
             tbx_gesamtpreis.Content = text + "€";
         }
 
+        // Überlädt die ToString-Methode, um die Pizza mit allen Zutaten auszugeben, unabhängig davon wie viele Zutaten ausgewählt werden.
         public string ToString(string zutatenAnzahl)
         {
-            // Ändern
             switch (zutatenAnzahl)
             {
                 case "0":
                     return string.Format("{0}", pizza.GetBezeichnung());
                 case "1":
-                    return pizza.GetBezeichnung();
+                    return string.Format("{0} mit {1}", pizza.GetBezeichnung(), zutatenListe[0]);
                 case "2":
-                    return
+                    return string.Format("{0} mit {1}, {2}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1]);
+                case "3":
+                    return string.Format("{0} mit {1}, {2}, {3}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2]);
+                case "4":
+                    return string.Format("{0} mit {1}, {2}, {3}, {4}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2], zutatenListe[3]);
+                case "5":
+                    return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2], zutatenListe[3], zutatenListe[4]);
+                case "6":
+                    return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}, {6}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2], zutatenListe[3],
+                        zutatenListe[4], zutatenListe[5]);
+                case "7":
+                    return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}, {6}, {7}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2], zutatenListe[3],
+                        zutatenListe[4], zutatenListe[5], zutatenListe[6]);
+                default:
+                    return "Keine Pizza bestellt.";
             }
-            // Ändern
-            return base.ToString();
         }
 
-        public void ausgabeInTextdatei()
+        public void AusgabeInTextdatei()
         {
 
         }

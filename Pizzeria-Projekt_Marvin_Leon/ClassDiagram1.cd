@@ -34,7 +34,7 @@
   <Class Name="Pizzeria_Projekt_Marvin_Leon.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="13" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
@@ -45,21 +45,18 @@
       <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Pizza.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Field Name="pizzaZutaten" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Pizzeria_Projekt_Marvin_Leon.Produkt">
     <Position X="9.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAEAAAABA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAABAAAQAAEAAAAQA=</HashCode>
       <FileName>Produkt.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Pizzeria_Projekt_Marvin_Leon.Zutat">
     <Position X="14.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAQA=</HashCode>
       <FileName>Zutat.cs</FileName>
     </TypeIdentifier>
   </Class>

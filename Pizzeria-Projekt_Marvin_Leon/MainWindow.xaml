@@ -5,21 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pizzeria_Projekt_Marvin_Leon"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="205" Width="588">
     <Grid>
-        <Label Content="Pizzaria XYZ" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" FontFamily="Arial"/>
-        <Image HorizontalAlignment="Left" Height="60" Margin="481,12,0,0" VerticalAlignment="Top" Width="58" Source="/pictures/pizza-ge001c3d07_1280.png"/>
-        <Button Content="Lagerbestand" HorizontalAlignment="Left" Height="32" Margin="361,90,0,0" VerticalAlignment="Top" Width="136" FontWeight="Bold" FontSize="18" BorderThickness="0,0,0,0" Background="{x:Null}"/>
-        <Image HorizontalAlignment="Left" Height="44" Margin="324,84,0,0" VerticalAlignment="Top" Width="45" Source="/cardboard-box-g4fdf1f6be_1280.png" RenderTransformOrigin="1.855,-0.25"/>
-        <Button Content="Getränkesortiment" HorizontalAlignment="Left" Height="32" Margin="56,90,0,0" VerticalAlignment="Top" Width="186" FontWeight="Bold" FontSize="18" BorderThickness="0,0,0,0" Background="{x:Null}"/>
-        <Image HorizontalAlignment="Left" Height="44" Margin="30,84,0,0" VerticalAlignment="Top" Width="26" Source="/soda-g48263f709_1280.png" RenderTransformOrigin="1.855,-0.25"/>
-        <Button Content="Pizzasortiment" HorizontalAlignment="Left" Height="32" Margin="81,156,0,0" VerticalAlignment="Top" Width="136" FontWeight="Bold" FontSize="18" BorderThickness="0,0,0,0" Background="{x:Null}"/>
-        <Image HorizontalAlignment="Left" Height="38" Margin="32,156,0,0" VerticalAlignment="Top" Width="49" Source="/pizza-gfb0ffff0d_1280.png" RenderTransformOrigin="1.855,-0.25"/>
-        <Button Content="Bestellungen" HorizontalAlignment="Left" Height="32" Margin="588,90,0,0" VerticalAlignment="Top" Width="136" FontWeight="Bold" FontSize="18" BorderThickness="0,0,0,0" Background="{x:Null}" Click="Button_Click_1"/>
-        <Image HorizontalAlignment="Left" Height="44" Margin="551,84,0,0" VerticalAlignment="Top" Width="45" Source="/post-it-g8c4bae906_1280.png" RenderTransformOrigin="1.855,-0.25"/>
-        <Button Content="Bestellung erstellen           tellen" HorizontalAlignment="Left" Height="32" Margin="598,156,0,0" VerticalAlignment="Top" Width="182" FontWeight="Bold" FontSize="18" BorderThickness="0,0,0,0" Background="{x:Null}" Click="Button_Click_4"/>
-        <Image HorizontalAlignment="Left" Height="44" Margin="551,150,0,0" VerticalAlignment="Top" Width="45" Source="/post-it-g8c4bae906_1280.png" RenderTransformOrigin="1.855,-0.25"/>
-        <Button Content="Bestellungen" HorizontalAlignment="Left" Height="32" Margin="588,90,0,0" VerticalAlignment="Top" Width="136" FontWeight="Bold" FontSize="18" BorderThickness="0,0,0,0" Background="{x:Null}" Click="Button_Click_1"/>
+        <Label Content="Willkommen in der Pizzaria Mustermann" HorizontalAlignment="Left" Margin="17,31,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" FontFamily="Arial"/>
+        <Image HorizontalAlignment="Left" Height="60" Margin="502,21,0,0" VerticalAlignment="Top" Width="58" Source="/pictures/pizza-ge001c3d07_1280.png"/>
+        <Button Content="Bestellungen" HorizontalAlignment="Left" Height="32" Margin="78,106,0,0" VerticalAlignment="Top" Width="136" FontWeight="Bold" FontSize="18" BorderThickness="0,0,0,0" Background="{x:Null}" Click="Button_Click_1"/>
+        <Image HorizontalAlignment="Left" Height="44" Margin="41,100,0,0" VerticalAlignment="Top" Width="45" Source="/post-it-g8c4bae906_1280.png" RenderTransformOrigin="1.855,-0.25"/>
+        <Button Content="Bestellung erstellen           tellen" HorizontalAlignment="Left" Height="32" Margin="365,106,0,0" VerticalAlignment="Top" Width="182" FontWeight="Bold" FontSize="18" BorderThickness="0,0,0,0" Background="{x:Null}" Click="Button_Click_4"/>
+        <Image HorizontalAlignment="Left" Height="44" Margin="318,100,0,0" VerticalAlignment="Top" Width="45" Source="/post-it-g8c4bae906_1280.png" RenderTransformOrigin="1.855,-0.25"/>
+        <Button Content="Bestellungen" HorizontalAlignment="Left" Height="32" Margin="78,106,0,0" VerticalAlignment="Top" Width="136" FontWeight="Bold" FontSize="18" BorderThickness="0,0,0,0" Background="{x:Null}" Click="Button_Click_1"/>
 
     </Grid>
 </Window>

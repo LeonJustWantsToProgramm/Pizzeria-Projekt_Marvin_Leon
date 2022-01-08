@@ -192,7 +192,21 @@ namespace Pizzeria_Projekt_Marvin_Leon
             PreisEigenePizza();
             PreisPizzen();
             PreisGetränke();
+            if (tbx_pizza.Text == "0")
+            {
+                lbl_textMessage.Content = "Bitte wählen Sie mindestens eine Pizza aus.";
+            }
+            else
+            {
+                preisanzeigeAktuallisieren();
+            }
+            
 
+            
+        }
+
+        public void preisanzeigeAktuallisieren()
+        {
             string text = preis.ToString();
             tbx_gesamtpreis.Content = text + "€";
         }

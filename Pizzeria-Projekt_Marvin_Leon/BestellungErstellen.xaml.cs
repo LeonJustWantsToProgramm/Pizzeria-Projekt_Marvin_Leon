@@ -94,7 +94,9 @@ namespace Pizzeria_Projekt_Marvin_Leon
             var stringList = bestellung.bestellteProdukte.OfType<string>();
 
             // pfad auf jedem Windows PC verfügbar gemacht
-            String pfad = @"%USERPROFILE%\Downloads\DateiTest.txt";
+            var pathWithEnv = @"%USERPROFILE%\Downloads\DateiTest.txt";
+            var filePath = Environment.ExpandEnvironmentVariables(pathWithEnv);
+            String pfad = @"C:\Downloads\DateiTest.txt";
             List<String> ausgabeListe = stringList.Distinct().ToList();
             ausgabeListe.Sort();
             File.WriteAllLines(pfad, stringList);

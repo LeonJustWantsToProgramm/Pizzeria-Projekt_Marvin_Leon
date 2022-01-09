@@ -39,7 +39,9 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
         Pizza pizza;
 
-        List<String> zutatenListe = new List<String>();
+        int anzahlZutaten = 0;
+
+        List<String> zutatenListe = new List<String>(); 
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -48,6 +50,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
             spritePreis = 0;
             wasserPreis = 0;
 
+            zutatenListe.Clear();
 
             string vorname = tb_vorname.ToString();
             string nachname = tb_nachname.ToString();
@@ -86,12 +89,8 @@ namespace Pizzeria_Projekt_Marvin_Leon
                 bestellung.bestellteProdukte.Add(new Getraenk("Wasser", wasserPreis));
             }
 
-            //Ausgabe in eine Textdatei
-            List<String> ausgabeliste = new List<String>();
-            bestellung.bestellteProdukte.ToArray();
 
-
-            var stringList = bestellung.bestellteProdukte.OfType<string>();
+            var stringList = pizza.ToString(anzahlZutaten).OfType<string>();
 
             // pfad auf jedem Windows PC verfügbar gemacht
             var pathWithEnv = @"%USERPROFILE%\Desktop\DateiTest.txt";
@@ -99,12 +98,13 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
             List<String> ausgabeListe = stringList.Distinct().ToList();
             ausgabeListe.Sort();
-            File.WriteAllLines(filePath, stringList);
+            File.WriteAllLines(filePath, zutatenListe);
 
         }
 
         public void PreisEigenePizza()
         {
+
             if (cb_ananas.IsChecked == true)
             {
                 preis += 1.2;
@@ -200,43 +200,12 @@ namespace Pizzeria_Projekt_Marvin_Leon
             {
                 preisanzeigeAktuallisieren();
             }
-
-
-
         }
 
         public void preisanzeigeAktuallisieren()
         {
             string text = preis.ToString();
             tbx_gesamtpreis.Content = text + "€";
-        }
-
-        // Überlädt die ToString-Methode, um die Pizza mit allen Zutaten auszugeben, unabhängig davon wie viele Zutaten ausgewählt werden.
-        public string ToString(int zutatenAnzahl)
-        {
-            switch (zutatenAnzahl)
-            {
-                case 0:
-                    return string.Format("{0}", pizza.GetBezeichnung());
-                case 1:
-                    return string.Format("{0} mit {1}", pizza.GetBezeichnung(), zutatenListe[0]);
-                case 2:
-                    return string.Format("{0} mit {1}, {2}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1]);
-                case 3:
-                    return string.Format("{0} mit {1}, {2}, {3}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2]);
-                case 4:
-                    return string.Format("{0} mit {1}, {2}, {3}, {4}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2], zutatenListe[3]);
-                case 5:
-                    return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2], zutatenListe[3], zutatenListe[4]);
-                case 6:
-                    return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}, {6}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2], zutatenListe[3],
-                        zutatenListe[4], zutatenListe[5]);
-                case 7:
-                    return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}, {6}, {7}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2], zutatenListe[3],
-                        zutatenListe[4], zutatenListe[5], zutatenListe[6]);
-                default:
-                    return "Keine Pizza bestellt.";
-            }
         }
 
         public void AusgabeInTextdatei()

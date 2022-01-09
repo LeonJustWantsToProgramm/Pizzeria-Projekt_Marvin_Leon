@@ -101,7 +101,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
             kundendeteils.Add(nachname + vorname);
             kundendeteils.Add(straße + hausnummer);
             kundendeteils.Add(plz + stadt);
-            kundendeteils.Add("Gesamtpreis: " + tbx_gesamtpreis.Content);
+            kundendeteils.Add("Gesamtpreis: " + preis);
             ausgabeListe.Sort();
             var allProducts = kundendeteils.Concat(zutatenListe).ToList();
             File.WriteAllLines(filePath, allProducts);

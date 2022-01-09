@@ -122,7 +122,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
         public void PreisEigenePizza()
         {
-
+            zutatenListe.Add(tbx_pizza.Text + " x Pizza mit:");
             if (cb_ananas.IsChecked == true)
             {
                 preis += 1.2;

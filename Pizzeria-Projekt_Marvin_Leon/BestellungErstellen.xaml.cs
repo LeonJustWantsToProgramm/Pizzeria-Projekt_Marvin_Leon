@@ -110,7 +110,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
             kundendeteils.Add("Gesamtpreis: " + preis + "€");
             getränkeListe.Add("Getränkepreis: " + getränkepreis + "€");
 
-            zutatenListe.Add(tbx_pizza.Text + " x Pizza mit:");
+            
 
             ausgabeListe.Sort();
             var allProducts = kundendeteils.Concat(zutatenListe).Concat(getränkeListe).ToList();
@@ -120,7 +120,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
         public void PreisEigenePizza()
         {
-
+            zutatenListe.Add(tbx_pizza.Text + " x Pizza mit:");
             if (cb_ananas.IsChecked == true)
             {
                 preis += 1.2;

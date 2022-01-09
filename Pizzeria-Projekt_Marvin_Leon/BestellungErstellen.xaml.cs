@@ -200,9 +200,9 @@ namespace Pizzeria_Projekt_Marvin_Leon
             {
                 preisanzeigeAktuallisieren();
             }
-            
 
-            
+
+
         }
 
         public void preisanzeigeAktuallisieren()
@@ -212,26 +212,26 @@ namespace Pizzeria_Projekt_Marvin_Leon
         }
 
         // Überlädt die ToString-Methode, um die Pizza mit allen Zutaten auszugeben, unabhängig davon wie viele Zutaten ausgewählt werden.
-        public string ToString(string zutatenAnzahl)
+        public string ToString(int zutatenAnzahl)
         {
             switch (zutatenAnzahl)
             {
-                case "0":
+                case 0:
                     return string.Format("{0}", pizza.GetBezeichnung());
-                case "1":
+                case 1:
                     return string.Format("{0} mit {1}", pizza.GetBezeichnung(), zutatenListe[0]);
-                case "2":
+                case 2:
                     return string.Format("{0} mit {1}, {2}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1]);
-                case "3":
+                case 3:
                     return string.Format("{0} mit {1}, {2}, {3}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2]);
-                case "4":
+                case 4:
                     return string.Format("{0} mit {1}, {2}, {3}, {4}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2], zutatenListe[3]);
-                case "5":
+                case 5:
                     return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2], zutatenListe[3], zutatenListe[4]);
-                case "6":
+                case 6:
                     return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}, {6}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2], zutatenListe[3],
                         zutatenListe[4], zutatenListe[5]);
-                case "7":
+                case 7:
                     return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}, {6}, {7}", pizza.GetBezeichnung(), zutatenListe[0], zutatenListe[1], zutatenListe[2], zutatenListe[3],
                         zutatenListe[4], zutatenListe[5], zutatenListe[6]);
                 default:

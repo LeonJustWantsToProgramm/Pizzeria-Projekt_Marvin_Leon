@@ -107,8 +107,8 @@ namespace Pizzeria_Projekt_Marvin_Leon
             kundendeteils.Add(nachname + ", " + vorname);
             kundendeteils.Add(straße + ",  " + hausnummer);
             kundendeteils.Add(plz + " " + stadt);
-            kundendeteils.Add("Getränkepreis :" + getränkepreis);
-            kundendeteils.Add("Gesamtpreis: " + preis);
+            kundendeteils.Add("Getränkepreis: " + getränkepreis + "€");
+            kundendeteils.Add("Gesamtpreis: " + preis + "€");
 
             ausgabeListe.Sort();
             var allProducts = kundendeteils.Concat(zutatenListe).Concat(getränkeListe).ToList();
@@ -217,6 +217,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
             }
             else
             {
+                lbl_textMessage.Content = "";
                 preisanzeigeAktuallisieren();
             }
         }

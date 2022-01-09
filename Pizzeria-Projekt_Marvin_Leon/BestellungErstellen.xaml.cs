@@ -60,7 +60,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
             string straße = tb_straße.Text;
             string hausnummer = tb_hausnummer.Text;
             int plz = Convert.ToInt32(tb_plz.Text);
-            string stadt = tb_stadt.ToString();
+            string stadt = tb_stadt.Text;
             string date = DateTime.Now.ToString("MM/dd/yyyy h:mm tt");
 
             Kunde kunde = new Kunde(vorname, nachname, plz, stadt, straße, hausnummer);
@@ -165,7 +165,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
         public void PreisPizzen()
         {
-            if (tbx_pizza.ToString() != "0")
+            if (tbx_pizza.Text != "0")
             {
                 int input = int.Parse(tbx_pizza.Text);
                 preis += input * 5.5;

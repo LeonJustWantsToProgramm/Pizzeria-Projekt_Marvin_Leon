@@ -41,16 +41,19 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
         int anzahlZutaten = 0;
 
-        List<String> zutatenListe = new List<String>(); 
+        List<String> zutatenListe = new List<String>();
+        List<String> getränkeListe = new List<string>();
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            preis = 0;
             colaPreis = 0;
             fantaPreis = 0;
             spritePreis = 0;
             wasserPreis = 0;
 
             zutatenListe.Clear();
+            getränkeListe.Clear();
 
             string vorname = tb_vorname.ToString();
             string nachname = tb_nachname.ToString();
@@ -101,6 +104,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
             kundendeteils.Add(nachname.ToString() + vorname.ToString());
             kundendeteils.Add(straße.ToString() + hausnummer.ToString());
             kundendeteils.Add(plz.ToString() + stadt.ToString());
+            kundendeteils.Add(getränkeListe.ToString());
             kundendeteils.Add("Gesamtpreis: " + preis);
             ausgabeListe.Sort();
             var allProducts = kundendeteils.Concat(zutatenListe).ToList();
@@ -171,24 +175,29 @@ namespace Pizzeria_Projekt_Marvin_Leon
                 int input = int.Parse(tbx_cola.Text);
                 preis += input * 2.5;
                 colaPreis += input * 2.5;
+                getränkeListe.Add(tbx_cola.ToString() + "x" + "Cola");
+
             }
             if (tbx_fanta.ToString() != "0")
             {
                 int input = int.Parse(tbx_fanta.Text);
                 preis += input * 2.5;
                 fantaPreis += input * 2.5;
+                getränkeListe.Add(tbx_fanta.ToString() + "x" + "Fanta");
             }
             if (tbx_sprite.ToString() != "0")
             {
                 int input = int.Parse(tbx_sprite.Text);
                 preis += input * 2.5;
                 spritePreis += input * 2.5;
+                getränkeListe.Add(tbx_sprite.ToString() + "x" + "Sprite");
             }
             if (tbx_wasser.ToString() != "0")
             {
                 int input = int.Parse(tbx_wasser.Text);
                 preis += input * 1.5;
                 wasserPreis += input * 2.5;
+                getränkeListe.Add(tbx_wasser.ToString() + "x" + "Wasser");
             }
         }
 

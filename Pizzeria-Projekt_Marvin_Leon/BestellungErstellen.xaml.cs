@@ -179,7 +179,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
                 int input = int.Parse(tbx_cola.Text);
                 preis += input * 2.5;
                 colaPreis += input * 2.5;
-                getränkeListe.Add(tbx_cola.ToString() + "x" + "Cola");
+                getränkeListe.Add(tbx_cola.Text + "x" + "Cola");
 
             }
             if (tbx_fanta.ToString() != "0")
@@ -187,21 +187,21 @@ namespace Pizzeria_Projekt_Marvin_Leon
                 int input = int.Parse(tbx_fanta.Text);
                 preis += input * 2.5;
                 fantaPreis += input * 2.5;
-                getränkeListe.Add(tbx_fanta.ToString() + "x" + "Fanta");
+                getränkeListe.Add(tbx_fanta.Text + "x" + "Fanta");
             }
             if (tbx_sprite.ToString() != "0")
             {
                 int input = int.Parse(tbx_sprite.Text);
                 preis += input * 2.5;
                 spritePreis += input * 2.5;
-                getränkeListe.Add(tbx_sprite.ToString() + "x" + "Sprite");
+                getränkeListe.Add(tbx_sprite.Text + "x" + "Sprite");
             }
             if (tbx_wasser.ToString() != "0")
             {
                 int input = int.Parse(tbx_wasser.Text);
                 preis += input * 1.5;
                 wasserPreis += input * 2.5;
-                getränkeListe.Add(tbx_wasser.ToString() + "x" + "Wasser");
+                getränkeListe.Add(tbx_wasser.Text + "x" + "Wasser");
             }
         }
 

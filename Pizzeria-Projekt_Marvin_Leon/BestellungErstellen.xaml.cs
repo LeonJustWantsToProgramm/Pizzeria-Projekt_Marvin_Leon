@@ -109,11 +109,11 @@ namespace Pizzeria_Projekt_Marvin_Leon
             kundendeteils.Add(straße + " " + hausnummer);
             kundendeteils.Add(plz + " " + stadt + "\n");
 
-            gesamtListe.Add("Gesamtpreis: " + preis + "€");
-
-            getränkeListe.Add("Getränkepreis: " + getränkepreis + "€");
-
             pizzenListe.Add(pizza.ToString(anzahlZutaten) + "\nPizzenpreis: " + Math.Round(pizzaPreis, 2) + "€\n");
+
+            getränkeListe.Add("Getränkepreis: " + getränkepreis + "€\n");
+
+            gesamtListe.Add("Gesamtpreis: " + preis + "€");
 
             var allProducts = kundendeteils.Concat(pizzenListe).Concat(getränkeListe).Concat(gesamtListe).ToList();
             File.WriteAllLines(filePath, allProducts);
@@ -238,12 +238,5 @@ namespace Pizzeria_Projekt_Marvin_Leon
             string text = preis.ToString();
             tbx_gesamtpreis.Content = text + "€";
         }
-
-        public void AusgabeInTextdatei()
-        {
-
-        }
-
-
     }
 }

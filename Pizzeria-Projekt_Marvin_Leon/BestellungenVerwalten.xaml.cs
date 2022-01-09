@@ -24,7 +24,11 @@ namespace Pizzeria_Projekt_Marvin_Leon
         public BestellungenVerwalten()
         {
             InitializeComponent();
-            txtEditor.Text = File.ReadAllText("%USERPROFILE%/Desktop/Bestellung.txt");
+
+            var pathWithEnv = @"%USERPROFILE%\Desktop\Bestellung.txt";
+            var filePath = Environment.ExpandEnvironmentVariables(pathWithEnv);
+
+            txtEditor.Text = File.ReadAllText(filePath);
         }
     }
 }

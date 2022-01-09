@@ -1,5 +1,4 @@
-﻿using Pizzaria;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,7 +27,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Bestellungen bestellungen = new Bestellungen();
+            BestellungenVerwalten bestellungen = new BestellungenVerwalten();
             bestellungen.Show();
         }
 

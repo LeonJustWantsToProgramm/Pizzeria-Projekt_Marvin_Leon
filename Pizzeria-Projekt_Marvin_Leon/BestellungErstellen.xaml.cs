@@ -61,7 +61,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
             string hausnummer = tb_hausnummer.Text;
             int plz = Convert.ToInt32(tb_plz.Text);
             string stadt = tb_stadt.Text;
-            string date = DateTime.Now.ToString("MM/dd/yyyy h:mm tt");
+            string date = DateTime.Now.ToString("dd/MM/yyyy h:mm tt");
 
             Kunde kunde = new Kunde(vorname, nachname, plz, stadt, straße, hausnummer);
 
@@ -105,10 +105,12 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
             kundendeteils.Add(date);
             kundendeteils.Add(nachname + ", " + vorname);
-            kundendeteils.Add(straße + ",  " + hausnummer);
+            kundendeteils.Add(straße + ", " + hausnummer);
             kundendeteils.Add(plz + " " + stadt);
-            kundendeteils.Add("Getränkepreis: " + getränkepreis + "€");
             kundendeteils.Add("Gesamtpreis: " + preis + "€");
+            getränkeListe.Add("Getränkepreis: " + getränkepreis + "€");
+
+            zutatenListe.Add(tbx_pizza.Text + " x Pizza mit:");
 
             ausgabeListe.Sort();
             var allProducts = kundendeteils.Concat(zutatenListe).Concat(getränkeListe).ToList();

@@ -98,9 +98,9 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
             List<String> ausgabeListe = stringList.Distinct().ToList();
             List<String> kundendeteils = new List<String>();
-            kundendeteils.Add(nachname + vorname);
-            kundendeteils.Add(straße + hausnummer);
-            kundendeteils.Add(plz + stadt);
+            kundendeteils.Add(nachname.ToString() + vorname.ToString());
+            kundendeteils.Add(straße.ToString() + hausnummer.ToString());
+            kundendeteils.Add(plz.ToString() + stadt.ToString());
             kundendeteils.Add("Gesamtpreis: " + preis);
             ausgabeListe.Sort();
             var allProducts = kundendeteils.Concat(zutatenListe).ToList();

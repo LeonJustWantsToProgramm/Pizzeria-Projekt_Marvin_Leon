@@ -26,23 +26,25 @@ namespace Pizzeria_Projekt_Marvin_Leon
                 case 0:
                     return string.Format("{0}", GetBezeichnung());
                 case 1:
-                    return string.Format("{0} mit {1}", GetBezeichnung(), pizzaZutaten[0]);
+                    return string.Format("{0} mit {1}", GetBezeichnung(), pizzaZutaten[0].GetBezeichnung());
                 case 2:
-                    return string.Format("{0} mit {1}, {2}", GetBezeichnung(), pizzaZutaten[0], pizzaZutaten[1]);
+                    return string.Format("{0} mit {1}, {2}", GetBezeichnung(), pizzaZutaten[0].GetBezeichnung(), pizzaZutaten[1].GetBezeichnung());
                 case 3:
-                    return string.Format("{0} mit {1}, {2}, {3}", GetBezeichnung(), pizzaZutaten[0], pizzaZutaten[1], pizzaZutaten[2]);
+                    return string.Format("{0} mit {1}, {2}, {3}", GetBezeichnung(), pizzaZutaten[0].GetBezeichnung(), pizzaZutaten[1].GetBezeichnung(), pizzaZutaten[2].GetBezeichnung());
                 case 4:
-                    return string.Format("{0} mit {1}, {2}, {3}, {4}", GetBezeichnung(), pizzaZutaten[0], pizzaZutaten[1], pizzaZutaten[2], pizzaZutaten[3]);
+                    return string.Format("{0} mit {1}, {2}, {3}, {4}", GetBezeichnung(), pizzaZutaten[0].GetBezeichnung(), pizzaZutaten[1].GetBezeichnung(),
+                        pizzaZutaten[2].GetBezeichnung(), pizzaZutaten[3].GetBezeichnung());
                 case 5:
-                    return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}", GetBezeichnung(), pizzaZutaten[0], pizzaZutaten[1], pizzaZutaten[2], pizzaZutaten[3], pizzaZutaten[4]);
+                    return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}", GetBezeichnung(), pizzaZutaten[0].GetBezeichnung(), pizzaZutaten[1].GetBezeichnung(),
+                        pizzaZutaten[2].GetBezeichnung(), pizzaZutaten[3].GetBezeichnung(), pizzaZutaten[4].GetBezeichnung());
                 case 6:
-                    return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}, {6}", GetBezeichnung(), pizzaZutaten[0], pizzaZutaten[1], pizzaZutaten[2], pizzaZutaten[3],
-                        pizzaZutaten[4], pizzaZutaten[5]);
+                    return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}, {6}", GetBezeichnung(), pizzaZutaten[0].GetBezeichnung(), pizzaZutaten[1].GetBezeichnung(),
+                        pizzaZutaten[2].GetBezeichnung(), pizzaZutaten[3].GetBezeichnung(), pizzaZutaten[4].GetBezeichnung(), pizzaZutaten[5].GetBezeichnung());
                 case 7:
-                    return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}, {6}, {7}", GetBezeichnung(), pizzaZutaten[0], pizzaZutaten[1], pizzaZutaten[2], pizzaZutaten[3],
-                        pizzaZutaten[4], pizzaZutaten[5], pizzaZutaten[6]);
+                    return string.Format("{0} mit {1}, {2}, {3}, {4}, {5}, {6}, {7}", GetBezeichnung(), pizzaZutaten[0].GetBezeichnung(), pizzaZutaten[1].GetBezeichnung(),
+                        pizzaZutaten[2].GetBezeichnung(), pizzaZutaten[3].GetBezeichnung(), pizzaZutaten[4].GetBezeichnung(), pizzaZutaten[5].GetBezeichnung(), pizzaZutaten[6].GetBezeichnung());
                 default:
-                    return "Keine Pizza bestellt.";
+                    return "";
             }
         }
     }

@@ -39,10 +39,11 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
         Pizza pizza;
 
-        int anzahlZutaten = 0;
+        int anzahlZutaten;
 
-        List<String> zutatenListe = new List<String>();
-        List<String> getränkeListe = new List<string>();
+        List<string> pizzenListe = new List<string>();
+        List<string> zutatenListe = new List<string>();
+        List<string> getränkeListe = new List<string>();
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -51,6 +52,8 @@ namespace Pizzeria_Projekt_Marvin_Leon
             fantaPreis = 0;
             spritePreis = 0;
             wasserPreis = 0;
+
+            anzahlZutaten = 0;
 
             zutatenListe.Clear();
             getränkeListe.Clear();
@@ -94,26 +97,25 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
             double getränkepreis = colaPreis + fantaPreis + spritePreis + wasserPreis;
 
-            var stringList = pizza.ToString(anzahlZutaten).OfType<string>();
-
             // pfad auf jedem Windows PC verfügbar gemacht
-            var pathWithEnv = @"%USERPROFILE%\Desktop\DateiTest.txt";
+            var pathWithEnv = @"%USERPROFILE%\Desktop\Bestellung.txt";
             var filePath = Environment.ExpandEnvironmentVariables(pathWithEnv);
 
-            List<String> ausgabeListe = stringList.Distinct().ToList();
-            List<String> kundendeteils = new List<String>();
+            List<string> kundendeteils = new List<string>();
+            List<string> gesamtListe = new List<string>();
 
             kundendeteils.Add(date);
             kundendeteils.Add(nachname + ", " + vorname);
-            kundendeteils.Add(straße + ", " + hausnummer);
-            kundendeteils.Add(plz + " " + stadt);
-            kundendeteils.Add("Gesamtpreis: " + preis + "€");
+            kundendeteils.Add(straße + " " + hausnummer);
+            kundendeteils.Add(plz + " " + stadt + "\n");
+
+            gesamtListe.Add("Gesamtpreis: " + preis + "€");
+
             getränkeListe.Add("Getränkepreis: " + getränkepreis + "€");
 
-            zutatenListe.Add(tbx_pizza.Text + " x Pizza mit:");
+            pizzenListe.Add(pizza.ToString(anzahlZutaten) + "\nPizzenpreis: " + Math.Round(pizzaPreis, 2) + "€\n");
 
-            ausgabeListe.Sort();
-            var allProducts = kundendeteils.Concat(zutatenListe).Concat(getränkeListe).ToList();
+            var allProducts = kundendeteils.Concat(pizzenListe).Concat(getränkeListe).Concat(gesamtListe).ToList();
             File.WriteAllLines(filePath, allProducts);
 
         }
@@ -126,42 +128,49 @@ namespace Pizzeria_Projekt_Marvin_Leon
                 preis += 1.2;
                 pizzaPreis += 1.2;
                 zutatenListe.Add("Ananas");
+                anzahlZutaten++;
             }
             if (cb_käse.IsChecked == true)
             {
                 preis += 1.2;
                 pizzaPreis += 1.2;
                 zutatenListe.Add("Käse");
+                anzahlZutaten++;
             }
             if (cb_paprika.IsChecked == true)
             {
                 preis += 1.2;
                 pizzaPreis += 1.2;
                 zutatenListe.Add("Paprika");
+                anzahlZutaten++;
             }
             if (cb_peperoni.IsChecked == true)
             {
                 preis += 1.2;
                 pizzaPreis += 1.2;
                 zutatenListe.Add("Peperoni");
+                anzahlZutaten += 1;
             }
             if (cb_salami.IsChecked == true)
             {
                 preis += 1.2;
                 pizzaPreis += 1.2;
                 zutatenListe.Add("Salami");
+                anzahlZutaten += 1;
             }
             if (cb_schinken.IsChecked == true)
             {
                 preis += 1.2;
                 pizzaPreis += 1.2;
                 zutatenListe.Add("Schinken");
+                anzahlZutaten += 1;
             }
             if (cb_thunfisch.IsChecked == true)
             {
                 preis += 1.2;
                 pizzaPreis += 1.2;
                 zutatenListe.Add("Thunfisch");
+                anzahlZutaten += 1;
             }
         }
 

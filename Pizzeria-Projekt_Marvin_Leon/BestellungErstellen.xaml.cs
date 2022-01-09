@@ -92,6 +92,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
                 bestellung.bestellteProdukte.Add(new Getraenk("Wasser", wasserPreis));
             }
 
+            double getränkepreis = colaPreis + fantaPreis + spritePreis + wasserPreis;
 
             var stringList = pizza.ToString(anzahlZutaten).OfType<string>();
 
@@ -101,13 +102,15 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
             List<String> ausgabeListe = stringList.Distinct().ToList();
             List<String> kundendeteils = new List<String>();
+
             kundendeteils.Add(nachname.ToString() + vorname.ToString());
             kundendeteils.Add(straße.ToString() + hausnummer.ToString());
             kundendeteils.Add(plz.ToString() + stadt.ToString());
-            kundendeteils.Add(getränkeListe.ToString());
+            kundendeteils.Add("Getränkepreis :" + getränkepreis.ToString());
             kundendeteils.Add("Gesamtpreis: " + preis);
+
             ausgabeListe.Sort();
-            var allProducts = kundendeteils.Concat(zutatenListe).ToList();
+            var allProducts = kundendeteils.Concat(zutatenListe).Concat(getränkeListe).ToList();
             File.WriteAllLines(filePath, allProducts);
 
         }

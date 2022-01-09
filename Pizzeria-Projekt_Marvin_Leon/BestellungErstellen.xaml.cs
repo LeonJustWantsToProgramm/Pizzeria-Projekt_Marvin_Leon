@@ -104,9 +104,9 @@ namespace Pizzeria_Projekt_Marvin_Leon
             List<String> kundendeteils = new List<String>();
 
             kundendeteils.Add(date);
-            kundendeteils.Add(nachname + vorname);
-            kundendeteils.Add(straße + hausnummer);
-            kundendeteils.Add(plz + stadt);
+            kundendeteils.Add(nachname + ", " + vorname);
+            kundendeteils.Add(straße + ",  " + hausnummer);
+            kundendeteils.Add(plz + " " + stadt);
             kundendeteils.Add("Getränkepreis :" + getränkepreis);
             kundendeteils.Add("Gesamtpreis: " + preis);
 

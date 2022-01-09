@@ -55,10 +55,10 @@ namespace Pizzeria_Projekt_Marvin_Leon
             zutatenListe.Clear();
             getränkeListe.Clear();
 
-            string vorname = tb_vorname.ToString();
-            string nachname = tb_nachname.ToString();
-            string straße = tb_straße.ToString();
-            string hausnummer = tb_hausnummer.ToString();
+            string vorname = tb_vorname.Text;
+            string nachname = tb_nachname.Text;
+            string straße = tb_straße.Text;
+            string hausnummer = tb_hausnummer.Text;
             int plz = Convert.ToInt32(tb_plz.Text);
             string stadt = tb_stadt.ToString();
             string date = DateTime.Now.ToString("MM/dd/yyyy h:mm tt");
@@ -103,10 +103,11 @@ namespace Pizzeria_Projekt_Marvin_Leon
             List<String> ausgabeListe = stringList.Distinct().ToList();
             List<String> kundendeteils = new List<String>();
 
-            kundendeteils.Add(nachname.ToString() + vorname.ToString());
-            kundendeteils.Add(straße.ToString() + hausnummer.ToString());
-            kundendeteils.Add(plz.ToString() + stadt.ToString());
-            kundendeteils.Add("Getränkepreis :" + getränkepreis.ToString());
+            kundendeteils.Add(date);
+            kundendeteils.Add(nachname + vorname);
+            kundendeteils.Add(straße + hausnummer);
+            kundendeteils.Add(plz + stadt);
+            kundendeteils.Add("Getränkepreis :" + getränkepreis);
             kundendeteils.Add("Gesamtpreis: " + preis);
 
             ausgabeListe.Sort();

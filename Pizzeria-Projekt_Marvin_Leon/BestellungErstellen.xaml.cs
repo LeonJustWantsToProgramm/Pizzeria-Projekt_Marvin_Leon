@@ -97,10 +97,12 @@ namespace Pizzeria_Projekt_Marvin_Leon
             var filePath = Environment.ExpandEnvironmentVariables(pathWithEnv);
 
             List<String> ausgabeListe = stringList.Distinct().ToList();
-            string[] kundeeee = new string[] { "sdfsgdh"};
+            List<String> kundendeteils = new List<String>();
+            kundendeteils.Add("Erste Zeile");
+            kundendeteils.Add("zweite Zeile");
             ausgabeListe.Sort();
-            File.WriteAllLines(filePath, kundeeee);
-            File.WriteAllLines(filePath, zutatenListe);
+            var allProducts = kundendeteils.Concat(zutatenListe).ToList();
+            File.WriteAllLines(filePath, allProducts);
 
         }
 

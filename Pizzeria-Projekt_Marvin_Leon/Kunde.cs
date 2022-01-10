@@ -15,13 +15,37 @@ namespace Pizzeria_Projekt_Marvin_Leon
         private String straße;
         private String hausnummer;
 
+        public String Vorname
+        {
+            get { return vorname; }
+            set { vorname = value; }
+        }
+        public String Nachname
+        {
+            get { return nachname; }
+            set { nachname = value; }
+        }
+        public int PLZ
+        {
+            get { return plz; }
+            set { plz = value; }
+        }
+        public String Stadt
+        {
+            get { return stadt; }
+            set { stadt = value; }
+        }
+        public String Straße
+        {
+            get { return straße; }
+            set { straße = value; }
+        }
+        public String Hausnummer
+        {
+            get { return hausnummer; }
+            set { hausnummer = value; }
+        }
 
-        public String Vorname { get; set; }
-        public String Nachname { get; set; }
-        public int PLZ { get; set; }
-        public String Stadt { get; set; }
-        public String Straße { get; set; }
-        public String Hausnummer { get; set; }
 
         public Kunde(string vorname, string nachname, int plz, string stadt, string straße, string hausnummer)
         {
@@ -30,7 +54,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
             this.plz = plz;
             this.stadt = stadt;
             this.straße = straße;
-            this.hausnummer = hausnummer;       
+            this.hausnummer = hausnummer;
         }
     }
 }

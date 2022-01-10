@@ -25,10 +25,19 @@ namespace Pizzeria_Projekt_Marvin_Leon
         {
             InitializeComponent();
 
+            // nimmt den Pfad mit der Umgebungsvariable auf
             var pathWithEnv = @"%USERPROFILE%\Desktop\Bestellung.txt";
             var filePath = Environment.ExpandEnvironmentVariables(pathWithEnv);
 
-            txtEditor.Text = File.ReadAllText(filePath);
+            try
+            {
+                // und ließt den gesamten Text der Datei und setzt den Text vom Textfeld gleich dem Text in der Datei
+                txtEditor.Text = File.ReadAllText(filePath);
+            }
+            catch (Exception)
+            {
+                txtEditor.Text = "Keine Bestellung erstellt";
+            }
         }
     }
 }

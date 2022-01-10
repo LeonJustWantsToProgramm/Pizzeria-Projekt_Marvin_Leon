@@ -18,7 +18,15 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Pizzeria_Projekt_Marvin_Leon.Getraenk">
-    <Position X="7.5" Y="6.5" Width="1.5" />
+    <Position X="7.75" Y="6.75" Width="1.5" />
+    <InheritanceLine Type="Pizzeria_Projekt_Marvin_Leon.Produkt" ManuallyRouted="true">
+      <Path>
+        <Point X="10.25" Y="5.247" />
+        <Point X="10.25" Y="6.388" />
+        <Point X="8.5" Y="6.388" />
+        <Point X="8.5" Y="6.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Getraenk.cs</FileName>
@@ -37,19 +45,30 @@
       <HashCode>AAACAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
+    <Lollipop Position="0.1" Collapsed="true" />
   </Class>
   <Class Name="Pizzeria_Projekt_Marvin_Leon.Pizza">
-    <Position X="11.5" Y="6.5" Width="1.5" />
+    <Position X="11.25" Y="6.75" Width="1.5" />
+    <InheritanceLine Type="Pizzeria_Projekt_Marvin_Leon.Produkt" ManuallyRouted="true">
+      <Path>
+        <Point X="10.25" Y="5.247" />
+        <Point X="10.25" Y="6.388" />
+        <Point X="12" Y="6.388" />
+        <Point X="12" Y="6.75" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAEAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Pizza.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="pizzaZutaten" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Pizzeria_Projekt_Marvin_Leon.Produkt">
-    <Position X="9.5" Y="3.75" Width="1.5" />
+    <Position X="9.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAABAAAQAAEAAAAQA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAEAAAAAA=</HashCode>
       <FileName>Produkt.cs</FileName>
     </TypeIdentifier>
   </Class>

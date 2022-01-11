@@ -110,13 +110,13 @@ namespace Pizzeria_Projekt_Marvin_Leon
             List<string> kundendetails = new List<string>();
             List<string> gesamtListe = new List<string>();
 
-            kundendetails.Add(date);
+            kundendetails.Add("\n\n" + date);
             kundendetails.Add(kunde.Nachname + ", " + kunde.Vorname);
             kundendetails.Add(kunde.Straße + " " + kunde.Hausnummer);
             kundendetails.Add(kunde.PLZ + " " + kunde.Stadt + "\n");
 
             // Die Pizza mit den verschiedenen Zutaten wird mit dem Preis der Pizzen (gerundet auf 2 Nachkommastellen) in die Pizzenliste eingefügt
-            pizzenListe.Add(tbx_pizza.Text + pizza.ToString(anzahlZutaten) + "\nPizzenpreis: " + Math.Round(pizzaPreis, 2) + "€\n");
+            pizzenListe.Add(tbx_pizza.Text + " " + pizza.ToString(anzahlZutaten) + "\nPizzenpreis: " + Math.Round(pizzaPreis, 2) + "€\n");
 
             getränkeListe.Add("Getränkepreis: " + getränkePreis + "€\n");
 
@@ -124,7 +124,7 @@ namespace Pizzeria_Projekt_Marvin_Leon
 
             // verbindet alle Listen zu einer Variable und gibt schreibt alles in die Datei Bestellung
             var allProducts = kundendetails.Concat(pizzenListe).Concat(getränkeListe).Concat(gesamtListe).ToList();
-            File.WriteAllLines(filePath, allProducts);
+            File.AppendAllLines(filePath, allProducts);
         }
 
         // Preis wird durch das Checken jeder Zutat erhöht, jede gecheckte Zutat zur Zutatenliste hinzugefügt 
